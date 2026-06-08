@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade | Ecommerce Website</title>
+<!---------------------custom css file link------------------------>
+    <link rel="stylesheet" href="style.css">
+<!---------------------Google font cdn link------------------------>
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+<!-------------------font awesome 4 cdn link----------------------->    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!----------------------Header------------------------------------->
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="h_logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Produts</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>  
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+          </div>  
+        </div>   
+
+<div class="contact-page">
+   <h1>Contact Us</h1>
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                    <p>If you have any questions about our Products or Services, 
+                       feel free to contact us. Our support team is always ready to help you.</p><br>
+                            <div class="highlight">
+                                <p><b>Email:</b> support@handmade.com</p>
+                                <p><b>Phone:</b> +91 9812345633</p>
+                                <p><b>Address:</b> Solapur, Maharashtra, India</p>
+                                <p><b>Support Time:</b> 9:00 AM – 8:00 PM</p><br>
+                            </div>
+            </div>
+                            <div class="contact-form">
+                                <h3>Send Us a Message</h3>
+                                    <form action="/send_message" method="post">
+                                        <input type="text" name="name" placeholder="Your Name" required>
+                                        <input type="email" name="email" placeholder="Your Email" required>
+                                        <input type="text" name="subject" placeholder="Subject">
+                                        <textarea name="message" placeholder="Your Message" required></textarea>
+                                        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                                    </form>
+                            </div>
+                        </div>
+    </div>
+</body>
+</html>
+<!-------------------------Footer-------------------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Visit our WebSite</h3>
+            </div>
+            <div class="footer-col-2">
+                <img src="h_logo - Copy.png">
+                <p>Our Purpose to Promote Handmade Product <br>
+                    online Support small creators and  
+                    bring their <br>product to a digital platform.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2026</p>
+    </div>
+</div>
+<!-----------------js for toggle menu------------------------->
+<script>
+    var MenuItems =document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+    </body>
+</html>
